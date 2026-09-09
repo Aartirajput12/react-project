@@ -81,7 +81,7 @@ image:
     <div className="carousel-item">
       <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHww" className="d-block w-100" alt="..." style={{height:"700px"}}/>
       <div className="carousel-caption d-none d-md-block">
-      <h5 style={{fontSize:"140px",marginTop:"-680px",marginLeft:"-1000px"}}>Women <br/>Fashion</h5>
+      <h5 style={{fontSize:"140px",marginTop:"-680px",marginLeft:"-1000px",color:"black"}}>Women <br/>Fashion</h5>
       </div>
     </div>
   </div>
