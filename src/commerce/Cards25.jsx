@@ -10,6 +10,7 @@ import React from "react";
          if (alreadyAdded) { return;
          } setCartItems((prev) => 
           [ ...prev, { ...product, quantity: 1,
+
            }, 
           ]); 
         };
@@ -31,7 +32,7 @@ import React from "react";
    .gp1 .card, .grp9 .card { width: 100% !important; max-width: 400px; } 
    .product-img { height: 350px !important; }
     .product-buttons { display: flex; flex-direction: column; gap: 10px; } 
-    .product-buttons .btn { width: 100%; margin-left: 0 !important; } .product-buttons a { width: 100%; } } 
+    .product-buttons .btn { width: 200px; margin-left: 0 !important; } .product-buttons a { width: 100%; } } 
     
     /* SMALL MOBILE */ @media (max-width: 375px) 
     { .gp1, .grp9 { padding: 0 10px; } .gp1 .card, .grp9 .card { width: 100% !important; }
