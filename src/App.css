@@ -8,32 +8,27 @@
     font-family: Arial, sans-serif;
   }
   
-  .page {
+  .container {
     width: 100%;
+    padding: 10px;
   }
   
-  /* =========================
-     CATEGORY SECTION
-  ========================= */
-  
-  .categories {
-    width: 100%;
+  .card-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 3px;
-    overflow: hidden;
   }
   
-  .category-card {
+  .card {
     width: 100%;
-    background-color: #86cce5;
-    text-align: center;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #333;
   }
   
   .image-box {
     width: 100%;
-    aspect-ratio: 0.65;
-    overflow: hidden;
+    height: 400px;
   }
   
   .image-box img {
@@ -43,137 +38,89 @@
     display: block;
   }
   
-  .category-title {
-    min-height: 100px;
+  .title-box {
+    background-color: #83c9e5;
+    min-height: 170px;
+  
     display: flex;
     align-items: center;
     justify-content: center;
   
-    padding: 15px 5px;
+    padding: 15px;
+  }
   
+  .title-box h2 {
     color: white;
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-
-/* =========================
-   SUMMER BANNER
-========================= */
-
-.summer-banner {
-  width: 100%;
-  min-height: 450px;
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/images/summer.jpg");
-
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-.banner-content {
-  color: white;
-}
-
-.banner-content h2 {
-  font-size: 45px;
-  margin-bottom: 10px;
-}
-
-.banner-content h1 {
-  font-size: 90px;
-  font-family: cursive;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.banner-content p {
-  font-size: 35px;
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-  .categories {
-    grid-template-columns: repeat(4, 1fr);
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
   }
-
-  .category-title {
-    font-size: 20px;
+  
+  
+  /* ---------- TABLET ---------- */
+  
+  @media (max-width: 1000px) {
+    .card-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .image-box {
+      height: 350px;
+    }
+  
+    .title-box {
+      min-height: 130px;
+    }
+  
+    .title-box h2 {
+      font-size: 24px;
+    }
   }
-
-  .banner-content h2 {
-    font-size: 35px;
+  
+  
+  /* ---------- MOBILE ---------- */
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 6px;
+    }
+  
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
+  
+    .image-box {
+      height: 280px;
+    }
+  
+    .title-box {
+      min-height: 100px;
+      padding: 10px;
+    }
+  
+    .title-box h2 {
+      font-size: 21px;
+    }
   }
-
-  .banner-content h1 {
-    font-size: 65px;
+  
+  
+  /* ---------- SMALL MOBILE ---------- */
+  
+  @media (max-width: 400px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-box {
+      height: 400px;
+    }
+  
+    .title-box {
+      min-height: 90px;
+    }
+  
+    .title-box h2 {
+      font-size: 24px;
+    }
   }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-  .categories {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3px;
-  }
-
-  .category-title {
-    min-height: 70px;
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .summer-banner {
-    min-height: 300px;
-  }
-
-  .banner-content h2 {
-    font-size: 25px;
-  }
-
-  .banner-content h1 {
-    font-size: 55px;
-  }
-
-  .banner-content p {
-    font-size: 22px;
-  }
-
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
-
-@media (max-width: 400px) {
-
-  .category-title {
-    font-size: 16px;
-  }
-
-  .banner-content h1 {
-    font-size: 45px;
-  }
-
-}
