@@ -1,102 +1,64 @@
-import { useState } from "react";
 import "./App.css";
-// import State from './components/State';
-import Student from "./components/Student";
-// import Usestate from './components/Usestate';
-import Test1 from "./components/Test1";
-import FormHandling from "./components/FormHandling";
-import CheckBox from "./components/CheckBox";
-import Test2 from "./components/Test2";
-import ControllComp from "./components/ControllComp";
-import User from "./components/User";
-import UserefFunction from "./components/UserefFunction";
-import UseFormStatus from "./components/UseFormStatus";
-import UseTransitionHook from "./components/useTransitionHook";
-import DerivedState from "./components/DerivedState";
-import Comp1 from "./components/Comp1";
-import UpdatingObjects from "./components/UpdatingObjects";
-import UseActionState from "./components/UseActionState";
-import ContextData from "./components/api/ContextData";
-import College from "./components/api/College";
-import ToggleHandle from "./components/toggle/ToggleHandle";
-import JsonApi from "./components/api/JsonApi";
-import GetMethod from "./components/api/GetMethod";
-import UserAdd from "./components/api/UserAdd";
-// import { Route, Routes } from "react-router-dom";
-// import UserList from "./components/api/UserList";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
+import Nav5 from "./commerce/Nav5";
+import UI from "./commerce/UI";
+import Cards5 from "./commerce/Cards5";
+import Img from "./commerce/Img";
+import Product1 from "./commerce/Product1";
+import Product2 from "./commerce/Product2";
+import Product3 from "./commerce/Product3";
+import Product4 from "./commerce/Product4";
+import Product55 from "./commerce/Product55";
+import Product6 from "./commerce/Product6";
+import Product7 from "./commerce/Product7";
+import Sign from "./commerce/Sign";
+import Log from "./commerce/Log";
+import Cards25 from "./commerce/Cards25";
+import Addcart from "./commerce/Addcart";
+import Form from "./commerce/Form";
+import Success from "./commerce/Success";
+import Footer from "./commerce/Footer";
+import Pay from "./commerce/Pay";
 function App() {
-  // const purple = '#8e44ad';
-  // const [bg, setBg] = useState(purple);
-  // const [name, setName] = useState("click me");
-
-  // const bgChange = () => {
-  //   // console.log("clicked");
-  //   let newBg = "#34495e";
-  //   setBg(newBg);
-  //   setName("ouch!!")
-  // }
-
-  // const onDoubleClick = () => {
-  //   setBg(purple);
-  //   setName("ayooo")
-  // }
-
-  // const displayName = () => {
-  //   alert("displayName function")
-  // }
-  const [name, setName] = useState("vikram");
-  const [subject, setSubject] = useState("");
-  // const [user, setUser] = useState('')
+ const [cartItems, setCartItems] = useState([]);
   return (
     <>
-      {/* <div style={{backgroundColor : bg}}>
-        <button className='cursor-pointer border border-amber-50 p-1.5' onClick={bgChange} onDoubleClick={onDoubleClick}>{name}</button>
-      </div> */}
-      {/* <State/> */}
-      {/* <Student name="ananya" email="ananya12@gmail.com"/> */}
-      {/* <Usestate/> */}
+          <Nav5 count={cartItems.length} />
 
-      {/* <Test1/> */}
-      {/* <FormHandling/> */}
-      {/* <CheckBox/> */}
-      {/* <Test2/> */}
-      <ControllComp/>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <UI />
+              <Img />
 
-      {/* <User displayName={displayName}/> */}
+              {/* <Cards5/> */}
+              <Cards25 
+           cartItems={cartItems}
+           setCartItems={setCartItems} />
 
-      {/* <UserefFunction/> */}
-      {/* <UseFormStatus/> */}
-      {/* <UseTransitionHook/> */}
-      {/* <DerivedState/> */}
-      {/* <LiftingState/> */}
-      {/* <Comp1 name={name} setName={setName}/> */}
-      {/* <Comp1 setUser={setUser}/>
-      <Comp2 user={user}/> */}
-      {/* <UpdatingObjects/> */}
-      {/* <UseActionState/> */}
+<Footer/>
+            </>
+          }
+        />
 
-      {/* Context */}
-      {/* <div style={{backgroundColor: 'yellow', padding:10}}>
-         <ContextData.Provider value={subject}>
-          <select value={subject} onChange={(event) => setSubject(event.target.value)}>
-            <option value="">Select Subject</option>
-            <option value="Maths">Maths</option>
-            <option value="History">History</option>
-            <option value="English">English</option>
-          </select>
-         <h1 className="font-semibold text-4xl px-3 mb-5">Context API</h1>
-         <button className="bg-gray-300 p-3 my-2 cursor-pointer" onClick={() => setSubject('')}>Clear Data</button>
-         <College/>
-         </ContextData.Provider>
-        </div>  */}
-
-      {/* <ToggleHandle/> */}
-      {/* <GetMethod/> */}
-
-      {/* <JsonApi/> */}
-      {/*   <JsonApi/> */}
-   
+        <Route path="/Product1" element={<Product1 cartItems={cartItems} setCartItems={setCartItems} />} />
+        <Route path="/Product2" element={<Product2    cartItems={cartItems}setCartItems={setCartItems}/>} />
+        <Route path="/Product3" element={<Product3    cartItems={cartItems}setCartItems={setCartItems}/>} />
+        <Route path="/Product4" element={<Product4    cartItems={cartItems}setCartItems={setCartItems} />} />
+        <Route path="/Product55" element={<Product55   cartItems={cartItems}setCartItems={setCartItems} />} />
+        <Route path="/Product6" element={<Product6    cartItems={cartItems}setCartItems={setCartItems} />} />
+        <Route path="/Product7" element={<Product7    cartItems={cartItems}setCartItems={setCartItems}/>} />
+        <Route path="/Addcart" element={<Addcart     cartItems={cartItems} setCartItems={setCartItems}/>} />
+        <Route path="/Sign" element={<Sign />} />
+        <Route path="/Log" element={<Log />} />
+        <Route path="/Form" element={<Form/>} />
+        <Route path="/Success" element={<Success/>} />
+        <Route path="/Pay" element={<Pay/>} />
+      </Routes>
     </>
   );
 }
