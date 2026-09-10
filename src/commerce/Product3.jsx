@@ -101,7 +101,7 @@ const Product3 = ({ cartItems, setCartItems }) => {
 {/* ------------------------------------------------------------------------- */}
 <div className="grp"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
-  <img src="https://images.unsplash.com/photo-1672985352559-e76417a8ea76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0Mnx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="..." style={{height:"400px",objectFit:"cover"}}/>
+  <img src="https://images.unsplash.com/photo-1672985352559-e76417a8ea76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0Mnx8fGVufDB8fHx8fA%3D%3D" class="card-img-top  product-img" alt="..." />
   <div className="card-body">
   <h5 className="card-title"><img src="https://cdn-icons-png.flaticon.com/128/11822/11822840.png" style={{height:"20px"}}/>6,000</h5> 
     <button className="btn btn-primary" onClick={() => handleCart({ id: 24, name: "Product 6", price: 6000, image: "https://images.unsplash.com/photo-1672985352559-e76417a8ea76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0Mnx8fGVufDB8fHx8fA%3D%3D", }) } > Add to Cart </button>
@@ -111,7 +111,7 @@ const Product3 = ({ cartItems, setCartItems }) => {
 
 
 <div className="card"  style={{width:"25rem"}}>
-  <img src="https://images.unsplash.com/photo-1733937111165-36efb3ded769?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2MXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="..." style={{height:"400px",objectFit:"cover"}}/>
+  <img src="https://images.unsplash.com/photo-1733937111165-36efb3ded769?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2MXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top  product-img" alt="..." />
   <div className="card-body">
   <h5 className="card-title"><img src="https://cdn-icons-png.flaticon.com/128/11822/11822840.png" style={{height:"20px"}}/>18,000</h5> 
     <button className="btn btn-primary" onClick={() => handleCart({ id: 25, name: "Product 6", price: 18000, image: "https://images.unsplash.com/photo-1733937111165-36efb3ded769?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2MXx8fGVufDB8fHx8fA%3D%3D", }) } > Add to Cart </button>
@@ -121,7 +121,7 @@ const Product3 = ({ cartItems, setCartItems }) => {
 
 
 <div className="card"  style={{width:"25rem"}}>
-  <img src="https://images.unsplash.com/photo-1787831399008-bfcf54604470?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2NXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="..." style={{height:"400px",objectFit:"cover"}}/>
+  <img src="https://images.unsplash.com/photo-1787831399008-bfcf54604470?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2NXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top  product-img" alt="..." />
   <div className="card-body">
   <h5 className="card-title"><img src="https://cdn-icons-png.flaticon.com/128/11822/11822840.png" style={{height:"20px"}}/>16,000</h5> 
     <button className="btn btn-primary" onClick={() => handleCart({ id: 26, name: "Product 6", price: 16000, image: "https://images.unsplash.com/photo-1787831399008-bfcf54604470?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2NXx8fGVufDB8fHx8fA%3D%3D", }) } > Add to Cart </button>

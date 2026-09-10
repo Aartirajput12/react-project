@@ -101,10 +101,10 @@ image:
 
 /* CATEGORY IMAGE */
 
-.category-card img {
+.carousel-img {
   display: block;
-  width: 100%;
-  height: 280px;
+  width: 100% !important;
+  height: 750px;
   object-fit: cover;
 }
 
@@ -141,30 +141,29 @@ image:
 .carousel-img {
   display: block;
   width: 100% !important;
-  height: 750px;
+  height: 650px;
   object-fit: cover;
 }
 
 
-.fashion-title {
-  font-size: 40px;
+..fashion-title {
+  position: absolute;
+  right: -300px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 70px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px black;
+  line-height: 1.1;
+  text-align: left;
+
+  color: white;
+  text-shadow: 3px 3px 8px black;
+  white-space: nowrap;
 }
-
-@media (max-width: 768px) {
-  .fashion-title {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  .fashion-title {
-    font-size: 24px;
-  }
-}
-
-
 /* ================================
    LAPTOP / TABLET
 ================================ */
@@ -340,28 +339,31 @@ image:
   <div className="carousel-inner" >
     <div className="carousel-item active" >
       <img src="https://media.istockphoto.com/id/1398151036/photo/young-woman-in-linen-shirt-is-holding-sunglasses-on-head-and-glancing-to-the-side.jpg?s=612x612&w=0&k=20&c=D1KFwv3TrJ2q6Cm4uugr3yWEVeMMHEF2Cu_99vlPe7Q=" className="d-block w-100 carousel-img" alt="..." />
-      <div className="carousel-caption ">
-      <h5 className="fashion-title">
-  Women Fashion
-</h5>
-        {/* <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"380px",height:"120px",marginTop:"-700px"}}/>
-        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"1300px",height:"120px",marginTop:"-200px"}}/> */}
+      <div className="carousel-caption">
+  <h5 className="fashion-title">
+    <span>Women</span>
+    <span>Fashion</span>
+  </h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" />
+        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" />
       </div>
     </div>
     <div className="carousel-item">
       <img src="https://images.unsplash.com/photo-1652454108001-ccfbcaa87d24?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" className="d-block w-100 carousel-img" alt="..." />
-      <div className="carousel-caption ">
-      <h5 className="fashion-title">
-  Women Fashion
-</h5>
+      <div className="carousel-caption">
+  <h5 className="fashion-title">
+    <span>Women</span>
+    <span>Fashion</span>
+  </h5>
       </div>
     </div>
     <div className="carousel-item">
       <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHww" className="d-block w-100 carousel-img" alt="..." />
-      <div className="carousel-caption ">
-      <h5 className="fashion-title">
-  Women Fashion
-</h5>
+      <div className="carousel-caption">
+  <h5 className="fashion-title">
+    <span>Women</span>
+    <span>Fashion</span>
+  </h5>
       </div>
     </div>
   </div>
