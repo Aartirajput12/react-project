@@ -56,6 +56,270 @@ image:
   return (
 <>
 
+<style>{`
+
+/* ================================
+   GLOBAL
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+.category-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  padding: 30px;
+  margin: 0;
+}
+
+
+/* ================================
+   CATEGORY CARD
+================================ */
+
+.category-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  text-decoration: none;
+  color: black;
+  background: white;
+  border: 1px solid skyblue;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* CATEGORY IMAGE */
+
+.category-card img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+
+/* CATEGORY NAME */
+
+.category-name {
+  width: 100%;
+  background-color: skyblue;
+  text-align: center;
+  padding: 14px 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* ================================
+   CAROUSEL
+================================ */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-img {
+  display: block;
+  width: 100% !important;
+  height: 650px;
+  object-fit: cover;
+}
+
+
+/* FASHION TITLE */
+
+.fashion-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+/* ================================
+   LAPTOP / TABLET
+================================ */
+
+@media (max-width: 1200px) {
+
+  .category-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .category-card img {
+    height: 250px;
+  }
+
+  .carousel-img {
+    height: 550px;
+  }
+
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .category-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .category-card img {
+    height: 230px;
+  }
+
+  .category-name {
+    font-size: 18px;
+    padding: 12px 5px;
+  }
+
+  .carousel-img {
+    height: 450px;
+  }
+
+  .fashion-title {
+    font-size: 30px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+  .category-container {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+  .category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .category-name {
+    font-size: 16px;
+    padding: 10px 3px;
+  }
+
+  .carousel-img {
+    width: 100% !important;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .fashion-title {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .category-card img {
+    height: 280px;
+  }
+
+  .category-name {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .carousel-img {
+    height: 280px;
+  }
+
+  .fashion-title {
+    font-size: 22px;
+  }
+
+}
+
+
+/* ================================
+   EXTRA SMALL MOBILE
+================================ */
+
+@media (max-width: 320px) {
+
+  .category-container {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+
+  .category-card img {
+    height: 240px;
+  }
+
+  .category-name {
+    font-size: 16px;
+  }
+
+  .carousel-img {
+    height: 240px;
+  }
+
+}
+
+`}</style>
+
+
+
+
+
+
+
+
+
+
+
 <div id="carouselExampleCaptions" className="carousel slide">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,23 +329,29 @@ image:
   <div className="hhh">
   <div className="carousel-inner" >
     <div className="carousel-item active" >
-      <img src="https://media.istockphoto.com/id/1398151036/photo/young-woman-in-linen-shirt-is-holding-sunglasses-on-head-and-glancing-to-the-side.jpg?s=612x612&w=0&k=20&c=D1KFwv3TrJ2q6Cm4uugr3yWEVeMMHEF2Cu_99vlPe7Q=" className="d-block w-100" alt="..." style={{height:"700px"}}/>
+      <img src="https://media.istockphoto.com/id/1398151036/photo/young-woman-in-linen-shirt-is-holding-sunglasses-on-head-and-glancing-to-the-side.jpg?s=612x612&w=0&k=20&c=D1KFwv3TrJ2q6Cm4uugr3yWEVeMMHEF2Cu_99vlPe7Q=" className="d-block w-100 carousel-img" alt="..." />
       <div className="carousel-caption d-none d-md-block">
-        <h5 style={{paddingLeft:"800px",fontSize:"150px",marginTop:"-520px"}}>Women Fashion</h5>
-        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"380px",height:"120px",marginTop:"-700px"}}/>
-        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"1300px",height:"120px",marginTop:"-200px"}}/>
+      <h5 className="fashion-title">
+  Women Fashion
+</h5>
+        {/* <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"380px",height:"120px",marginTop:"-700px"}}/>
+        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" style={{marginLeft:"1300px",height:"120px",marginTop:"-200px"}}/> */}
       </div>
     </div>
     <div className="carousel-item">
-      <img src="https://images.unsplash.com/photo-1652454108001-ccfbcaa87d24?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" className="d-block w-100" alt="..." style={{height:"700px"}}/>
+      <img src="https://images.unsplash.com/photo-1652454108001-ccfbcaa87d24?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" className="d-block w-100 carousel-img" alt="..." />
       <div className="carousel-caption d-none d-md-block">
-      <h5 style={{paddingLeft:"800px",fontSize:"150px",marginTop:"-500px"}}>Women Fashion</h5>
+      <h5 className="fashion-title">
+  Women Fashion
+</h5>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHww" className="d-block w-100" alt="..." style={{height:"700px"}}/>
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHww" className="d-block w-100 carousel-img" alt="..." />
       <div className="carousel-caption d-none d-md-block">
-      <h5 style={{fontSize:"140px",marginTop:"-680px",marginLeft:"-1000px",color:"black"}}>Women <br/>Fashion</h5>
+      <h5 className="fashion-title">
+  Women Fashion
+</h5>
       </div>
     </div>
   </div>
@@ -99,33 +369,21 @@ image:
 
      
 
-<div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",marginTop:"20px"
-      }}
+<div className="category-container">
+  {Products.map((item) => (
+    <NavLink
+      to={item.link}
+      key={item.id}
+      className="category-card"
     >
-      {Products.map((product) => (
-        <div
-          className="card"
-          style={{ width:"220px",border:"1px solid",borderColor:"skyblue"}}
-          key={product.id}
-        >
-              <NavLink to={product.link}>
-          <img
-            src={product.image}
-            className="card-img-top"
-           style={{height:"200px"}}/></NavLink>
+      <img src={item.image} alt={item.name} />
 
-          <div className="card-body" style={{backgroundColor:"skyblue"}}>
-            <h5 className="card-title" style={{textAlign:"center"}}>
-              {product.title}
-            </h5>
-
-          </div>
-        </div>
-      ))}
-    </div>
+      <div className="category-name">
+        {item.title}
+      </div>
+    </NavLink>
+  ))}
+</div>
 
     </>
   )
