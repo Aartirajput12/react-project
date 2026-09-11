@@ -146,7 +146,7 @@ const Product4 = ({ cartItems, setCartItems }) => {
   }
 
   .card-body .btn {
-    width: 100%;
+    width: 200px;
     margin-left: 0 !important;
   }
 }

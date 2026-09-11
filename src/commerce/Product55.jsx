@@ -47,24 +47,25 @@ const Product55 = ({ cartItems, setCartItems }) => {
 <>
 
 {/* RESPONSIVE CSS */}
-<style> {` .gp1, .grp9 { display: flex; justify-content: space-around; gap: 20px; margin-top: 30px; flex-wrap: wrap; } 
- .gp1 .card, .grp9 .card { width: 25rem; } .product-img { width: 100%; height: 400px; object-fit: cover; }
-  .product-buttons { display: flex; gap: 10px; flex-wrap: wrap; } 
-  
-  /* TABLET */ @media (max-width: 992px) { .gp1, .grp9 { justify-content: center; gap: 20px; padding: 0 15px; } 
-  .gp1 .card, .grp9 .card { width: 45% !important; } .product-img { height: 350px !important; } } 
+<style>{`.grp8,.grp9 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
+  .grp8 .card,.grp9 .card {width: 25rem !important;}
+.product-img { width: 100%;height: 400px;object-fit: cover;}
+ .product-buttons {display: flex;gap: 10px;flex-wrap: wrap;}
+/* TABLET */
+  @media (max-width: 992px) {.grp8, .grp9 { justify-content: center;gap: 20px;}
+.grp8 .card,.grp9 .card { width: 45% !important;}
+.product-img { height: 350px; }}
 
-  /* MOBILE */ @media (max-width: 576px) 
-  { .gp1, .grp9 { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 20px !important; padding: 0 15px; } 
-   .gp1 .card, .grp9 .card { width: 100% !important; max-width: 400px; } 
-   .product-img { height: 350px !important; }
-    .product-buttons { display: flex; flex-direction: column; gap: 10px; } 
-    .product-buttons .btn { width: 200px; margin-left: 50px !important; } .product-buttons a { width: 100%; } } 
-    
-    /* SMALL MOBILE */ @media (max-width: 375px) 
-    { .gp1, .grp9 { padding: 0 10px; } .gp1 .card, .grp9 .card { width: 100% !important; }
-      .product-img { height: 300px !important; } } `}
-       </style>
+  /* MOBILE */
+  @media (max-width: 576px) { .grp8,.grp9 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
+.grp8 .card,.grp9 .card {width: 100% !important; max-width: 400px !important; }
+ .product-img { width: 100% !important; height: 350px !important;object-fit: cover;}}
+
+  /* SMALL MOBILE */
+  @media (max-width: 375px) {.grp8,.grp9 { padding: 0 10px; }
+.grp8 .card, .grp9 .card { width: 100% !important;max-width: 100% !important;}
+ .product-img { height: 300px !important; }}
+`}</style>
 
 
 
