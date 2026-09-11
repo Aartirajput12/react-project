@@ -75,15 +75,15 @@ const Footer = () => {
             <h4>Contact Us</h4>
 
             <p style={{ color: "#cccccc" }}>
-              📧 womenfashion@gmail.com
+               womenfashion@gmail.com
             </p>
 
             <p style={{ color: "#cccccc" }}>
-              📞 +91 98765 43210
+               +91 98765 43210
             </p>
 
             <p style={{ color: "#cccccc" }}>
-              📍 India
+               India
             </p>
           </div>
         </div>
