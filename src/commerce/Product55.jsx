@@ -47,23 +47,23 @@ const Product55 = ({ cartItems, setCartItems }) => {
 <>
 
 {/* RESPONSIVE CSS */}
-<style>{`.grp8,.grp9 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
-  .grp8 .card,.grp9 .card {width: 25rem !important;}
+<style>{`.grp88,.grp99 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
+  .grp88 .card,.grp99 .card {width: 25rem !important;}
 .product-img { width: 100%;height: 400px;object-fit: cover;}
  .product-buttons {display: flex;gap: 10px;flex-wrap: wrap;}
 /* TABLET */
-  @media (max-width: 992px) {.grp8, .grp9 { justify-content: center;gap: 20px;}
-.grp8 .card,.grp9 .card { width: 45% !important;}
+  @media (max-width: 992px) {.grp88, .grp99 { justify-content: center;gap: 20px;}
+.grp88 .card,.grp99 .card { width: 45% !important;}
 .product-img { height: 350px; }}
 
   /* MOBILE */
-  @media (max-width: 576px) { .grp8,.grp9 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
-.grp8 .card,.grp9 .card {width: 100% !important; max-width: 400px !important; }
+  @media (max-width: 576px) { .grp88,.grp99 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
+.grp889 .card,.grp99 .card {width: 100% !important; max-width: 400px !important; }
  .product-img { width: 100% !important; height: 350px !important;object-fit: cover;}}
 
   /* SMALL MOBILE */
-  @media (max-width: 375px) {.grp8,.grp9 { padding: 0 10px; }
-.grp8 .card, .grp9 .card { width: 100% !important;max-width: 100% !important;}
+  @media (max-width: 375px) {.grp88,.grp99 { padding: 0 10px; }
+.grp88 .card, .grp99 .card { width: 100% !important;max-width: 100% !important;}
  .product-img { height: 300px !important; }}
 `}</style>
 
@@ -71,7 +71,7 @@ const Product55 = ({ cartItems, setCartItems }) => {
 
 
 <div style={{backgroundColor:"rgba(147, 143, 143, 0.12)"}}>
-<div className="grp9" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
+<div className="grp99" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://images.unsplash.com/photo-1768033976371-0e4ef195dfa2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGt1cnRpfGVufDB8fDB8fHww" class="card-img-top" alt="..." style={{height:"400px"}}/>
   <div className="card-body" >
@@ -108,7 +108,7 @@ const Product55 = ({ cartItems, setCartItems }) => {
 
 
 {/* ------------------------------------------------------------------------- */}
-<div className="grp8"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
+<div className="grp88"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://images.unsplash.com/photo-1767687717463-1c9a555c76c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM0fHx8ZW58MHx8fHx8" class="card-img-top" alt="..." style={{height:"400px"}}/>
   <div className="card-body">
