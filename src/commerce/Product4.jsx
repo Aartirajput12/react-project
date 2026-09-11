@@ -37,127 +37,31 @@ const Product4 = ({ cartItems, setCartItems }) => {
   return (
 <>
 
-
-<style>{`
-
-.grp9,
-.grp88 {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.grp9 .card,
-.grp88 .card {
-  width: 25rem;
-}
-
-.product-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-
+<style>{`.grp11,.grp22 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
+  .grp11 .card,.grp22 .card {width: 25rem !important;}
+.product-img { width: 100%;height: 400px;object-fit: cover;}
+ .product-buttons {display: flex;gap: 10px;flex-wrap: wrap;}
 /* TABLET */
+  @media (max-width: 992px) {.grp11, .grp22 { justify-content: center;gap: 20px;}
+.grp11 .card,.grp22 .card { width: 45% !important;}
+.product-img { height: 350px; }}
 
-@media (max-width: 992px) {
+  /* MOBILE */
+  @media (max-width: 576px) { .grp11,.grp22 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
+.grp11 .card,.grp22 .card {width: 100% !important; max-width: 400px !important; }
+ .product-img { width: 100% !important; height: 350px !important;object-fit: cover;}}
 
-  .grp9,
-  .grp88 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 15px;
-    flex-wrap: wrap;
-  }
-
-  .grp9 .card,
-  .grp88 .card {
-    width: 45% !important;
-  }
-
-  .product-img {
-    height: 350px !important;
-  }
-}
-
-
-/* MOBILE */
-
-@media (max-width: 576px) {
-
-  .grp9,
-  .grp88 {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    padding: 0 15px !important;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .grp9 .card,
-  .grp88 .card {
-    width: 100% !important;
-    max-width: 400px !important;
-    box-sizing: border-box;
-  }
-
-  .product-img {
-    width: 100%;
-    height: 350px !important;
-    object-fit: cover;
-  }
-
-  .card-body {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .card-body .btn {
-    margin-left: 0 !important;
-    margin-top: 10px;
-  }
-}
-
-
-/* SMALL MOBILE */
-
-@media (max-width: 375px) {
-
-  .grp9,
-  .grp88 {
-    padding: 0 10px !important;
-  }
-
-  .grp9 .card,
-  .grp88 .card {
-    width: 100% !important;
-    max-width: 350px !important;
-  }
-
-  .product-img {
-    height: 300px !important;
-  }
-
-  .card-body .btn {
-    width: 200px;
-    margin-left: 0 !important;
-  }
-}
-
+  /* SMALL MOBILE */
+  @media (max-width: 375px) {.grp11,.grp22 { padding: 0 10px; }
+.grp11 .card, .grp22 .card { width: 100% !important;max-width: 100% !important;}
+ .product-img { height: 300px !important; }}
 `}</style>
 
 
 
 
 <div style={{backgroundColor:"rgba(147, 143, 143, 0.12)"}}>
-<div className="grp9" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
+<div className="grp22" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZHJlc3Nlc3xlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="..." style={{height:"400px"}}/>
   <div className="card-body">
@@ -194,7 +98,7 @@ const Product4 = ({ cartItems, setCartItems }) => {
 
 
 {/* ------------------------------------------------------------------------- */}
-<div className="grp88"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
+<div className="grp11"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://images.unsplash.com/photo-1746730921458-13e3fb521d10?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ5fHx8ZW58MHx8fHx8" class="card-img-top" alt="..." style={{height:"400px"}}/>
   <div className="card-body">
