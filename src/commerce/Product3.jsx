@@ -39,24 +39,25 @@ const Product3 = ({ cartItems, setCartItems }) => {
 
 
 {/* RESPONSIVE CSS */}
-<style> {` .gr, .grp { display: flex; justify-content: space-around; gap: 20px; margin-top: 30px; flex-wrap: wrap; } 
- .gr .card, .grp .card { width: 25rem; } .product-img { width: 100%; height: 400px; object-fit: cover; }
-  .product-buttons { display: flex; gap: 10px; flex-wrap: wrap; } 
-  
-  /* TABLET */ @media (max-width: 992px) { .gr, .grp { justify-content: center; gap: 20px; padding: 0 15px; } 
-  .gr .card, .grp .card { width: 45% !important; } .product-img { height: 350px !important; } } 
+<style>{`.gr,.grp {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
+  .gr .card,.grp .card {width: 25rem !important;}
+.product-img { width: 100%;height: 400px;object-fit: cover;}
+ .product-buttons {display: flex;gap: 10px;flex-wrap: wrap;}
+/* TABLET */
+  @media (max-width: 992px) {.gr, .grp { justify-content: center;gap: 20px;}
+.gr .card,.grp .card { width: 45% !important;}
+.product-img { height: 350px; }}
 
-  /* MOBILE */ @media (max-width: 576px) 
-  { .gr, .grp { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 20px !important; padding: 0 15px; } 
-   .gr .card, .grp .card { width: 100% !important; max-width: 400px; } 
-   .product-img { height: 350px !important; }
-    .product-buttons { display: flex; flex-direction: column; gap: 10px; } 
-    .product-buttons .btn { width: 200px; margin-left: 0 !important; } .product-buttons a { width: 100%; } } 
-    
-    /* SMALL MOBILE */ @media (max-width: 375px) 
-    { .gr, .grp { padding: 0 10px; } .gr .card, .grp .card { width: 100% !important; }
-      .product-img { height: 300px !important; } } `}
-       </style>
+  /* MOBILE */
+  @media (max-width: 576px) { .gr,.grp { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
+.gr .card,.grp .card {width: 100% !important; max-width: 400px !important; }
+ .product-img { width: 100% !important; height: 350px !important;object-fit: cover;}}
+
+  /* SMALL MOBILE */
+  @media (max-width: 375px) {.gr,.grp { padding: 0 10px; }
+.gr .card, .grp .card { width: 100% !important;max-width: 100% !important;}
+ .product-img { height: 300px !important; }}
+`}</style>
 
 
 
