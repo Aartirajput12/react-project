@@ -9,7 +9,7 @@ const Img = () => {
         style={{
           marginTop: "20px",
           width: "100%",
-          height: "200px",
+          height: "auto",
           display: "block"
         }}
         alt="Women Fashion"
