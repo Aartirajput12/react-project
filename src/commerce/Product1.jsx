@@ -169,7 +169,7 @@ const Product1 = ({ cartItems, setCartItems }) => {
    <div className="card-body"> 
    <h5 className="card-title"><img src="https://cdn-icons-png.flaticon.com/128/11822/11822840.png" style={{height:"20px"}} />5000</h5>  
      <button className="btn btn-primary" onClick={() => handleAdd({ id: 13, name: "Product 5", price: 5000, image: "https://plus.unsplash.com/premium_photo-1729095332173-873d625bc8ff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcyfHx8ZW58MHx8fHx8", }) } > Add to Cart </button>
-     <NavLink to="/Form"><button className="btn btn-primary"  > Buy Now </button> </NavLink>
+     <NavLink to="/Form"><button className="btn btn-primary" style={{ marginLeft: "10px" }} > Buy Now </button> </NavLink>
        </div> 
        </div>
 
@@ -179,7 +179,7 @@ const Product1 = ({ cartItems, setCartItems }) => {
     <div className="card-body"> 
       <h5 className="card-title"><img src="https://cdn-icons-png.flaticon.com/128/11822/11822840.png" style={{height:"20px"}}/>6000</h5> 
      <button className="btn btn-primary" onClick={() => handleAdd({ id: 14, name: "Product 6", price: 6000, image: "https://images.unsplash.com/photo-1649327797448-6b693a179ebe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDgzfHx8ZW58MHx8fHx8", }) } > Add to Cart </button>
-      <NavLink to="/Form"><button className="btn btn-primary"  > Buy Now </button> </NavLink>
+      <NavLink to="/Form"><button className="btn btn-primary" style={{ marginLeft: "10px" }} > Buy Now </button> </NavLink>
       </div>
        </div>
 </div>

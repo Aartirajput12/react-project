@@ -177,11 +177,11 @@ image:
   }
 
   .category-card img {
-    height: 250px;
+    height: 50px;
   }
 
   .carousel-img {
-    height: 550px;
+    height: 250px;
   }
 
 }
@@ -344,8 +344,6 @@ image:
     <span>Women</span>
     <span>Fashion</span>
   </h5>
-        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" />
-        <img src="https://cdn-icons-png.flaticon.com/128/15893/15893074.png" />
       </div>
     </div>
     <div className="carousel-item">
