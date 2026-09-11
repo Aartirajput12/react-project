@@ -38,23 +38,23 @@ const Product7 = ({ cartItems, setCartItems }) => {
 
 
 {/* RESPONSIVE CSS */}
-<style>{`.gp8,.gp9 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
-  .gp8 .card,.gp9 .card {width: 25rem !important;}
+<style>{`.grp66,.grp77 {display: flex; justify-content: space-around;gap: 20px; margin-top: 30px;flex-wrap: wrap;padding: 0 15px;}
+  .grp66 .card,.grp77 .card {width: 25rem !important;}
 .product-img { width: 100%;height: 400px;object-fit: cover;}
  .product-buttons {display: flex;gap: 10px;flex-wrap: wrap;}
 /* TABLET */
-  @media (max-width: 992px) {.gp8, .gp9 { justify-content: center;gap: 20px;}
-.gp8 .card,.gp9 .card { width: 45% !important;}
+  @media (max-width: 992px) {.grp66, .grp77 { justify-content: center;gap: 20px;}
+.grp66 .card,.grp77 .card { width: 45% !important;}
 .product-img { height: 350px; }}
 
   /* MOBILE */
-  @media (max-width: 576px) { .gp8,.gp9 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
-.gp8 .card,.gp9 .card {width: 100% !important; max-width: 400px !important; }
+  @media (max-width: 576px) { .grp66,.grp77 { display: flex !important;flex-direction: column !important;align-items: center !important; justify-content: center !important;gap: 20px !important; padding: 0 15px;}
+.grp66 .card,.grp77 .card {width: 100% !important; max-width: 400px !important; }
  .product-img { width: 100% !important; height: 350px !important;object-fit: cover;}}
 
   /* SMALL MOBILE */
-  @media (max-width: 375px) {.gp8,.gp9 { padding: 0 10px; }
-.gp8 .card, .gp9 .card { width: 100% !important;max-width: 100% !important;}
+  @media (max-width: 375px) {.grp8,.grp9 { padding: 0 10px; }
+.grp66 .card, .grp77 .card { width: 100% !important;max-width: 100% !important;}
  .product-img { height: 300px !important; }}
 `}</style>
 
@@ -62,7 +62,7 @@ const Product7 = ({ cartItems, setCartItems }) => {
 
 
 <div style={{backgroundColor:"rgba(147, 143, 143, 0.12)"}}>
-<div className="gp9" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
+<div className="grp77" style={{display:"flex",justifyContent:"space-around",paddingTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://plus.unsplash.com/premium_photo-1783874829440-b99f435a1d77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8" class="card-img-top" alt="..."style={{height:"400px",objectFit:"cover"}} />
   <div className="card-body">
@@ -99,7 +99,7 @@ const Product7 = ({ cartItems, setCartItems }) => {
 
 
 {/* ------------------------------------------------------------------------- */}
-<div className="gp8"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
+<div className="grp66"  style={{display:"flex",justifyContent:"space-around",marginTop:"30px"}}>
 <div className="card"  style={{width:"25rem"}}>
   <img src="https://plus.unsplash.com/premium_photo-1719306280448-1e012d998bbd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8" class="card-img-top" alt="..." style={{height:"400px",objectFit:"cover"}}/>
   <div className="card-body">
