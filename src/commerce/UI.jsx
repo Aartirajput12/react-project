@@ -55,20 +55,19 @@ image:
 
   return (
 <>
+```jsx
 <style>{`
-
 
 /* ================================
    CATEGORY CONTAINER
 ================================ */
 
 .category-container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
   margin: 30px auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
 }
 
 
@@ -78,6 +77,7 @@ image:
 
 .category-card {
   width: 100%;
+  min-width: 0;
   text-decoration: none;
   color: black;
   background: white;
@@ -94,25 +94,27 @@ image:
 
 
 /* ================================
-   7 CATEGORY IMAGES
+   CATEGORY IMAGE
 ================================ */
 
 .category-card img {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 220px;
   object-fit: cover;
 }
 
 
-/* CATEGORY NAME */
+/* ================================
+   CATEGORY NAME
+================================ */
 
 .category-name {
   width: 100%;
   background-color: skyblue;
   text-align: center;
-  padding: 12px 5px;
-  font-size: 18px;
+  padding: 10px 3px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -124,13 +126,17 @@ image:
 @media (max-width: 1200px) {
 
   .category-container {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    width: 96%;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
   }
 
   .category-card img {
-    height: 250px;
+    height: 190px;
+  }
+
+  .category-name {
+    font-size: 14px;
   }
 }
 
@@ -139,21 +145,42 @@ image:
    TABLET
 ================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .category-container {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
+    width: 94%;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
 
   .category-card img {
-    height: 230px;
+    height: 200px;
   }
 
   .category-name {
-    font-size: 17px;
-    padding: 10px 5px;
+    font-size: 16px;
+  }
+}
+
+
+/* ================================
+   SMALL TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .category-container {
+    width: 92%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .category-card img {
+    height: 200px;
+  }
+
+  .category-name {
+    font-size: 15px;
   }
 }
 
@@ -167,42 +194,16 @@ image:
   .category-container {
     width: 92%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 0;
-  }
-
-  .category-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .category-name {
-    font-size: 15px;
-    padding: 9px 3px;
-  }
-}
-
-
-/* ================================
-   SMALL MOBILE
-================================ */
-
-@media (max-width: 400px) {
-
-  .category-container {
-    width: 92%;
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
   .category-card img {
-    height: 180px;
+    height: 190px;
   }
 
   .category-name {
     font-size: 14px;
-    padding: 8px 2px;
+    padding: 9px 2px;
   }
 }
 
@@ -211,7 +212,7 @@ image:
    VERY SMALL MOBILE
 ================================ */
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
 
   .category-container {
     width: 94%;
@@ -220,7 +221,7 @@ image:
   }
 
   .category-card img {
-    height: 240px;
+    height: 230px;
   }
 
   .category-name {
@@ -228,9 +229,9 @@ image:
   }
 }
 
-
-
 `}</style>
+```
+
 
 
 

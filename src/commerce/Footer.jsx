@@ -11,6 +11,7 @@ const Footer = () => {
           color: "white",
           marginTop: "50px",
           padding: "50px 80px 20px",
+          textAlign:"center"
         }}
       >
         <div
