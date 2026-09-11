@@ -55,24 +55,20 @@ image:
 
   return (
 <>
-
 <style>{`
 
+
 /* ================================
-   GLOBAL
+   CATEGORY CONTAINER
 ================================ */
 
-* {
-  box-sizing: border-box;
-}
-
 .category-container {
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 25px;
-  padding: 30px;
-  margin: 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 
@@ -81,9 +77,7 @@ image:
 ================================ */
 
 .category-card {
-  display: block;
   width: 100%;
-  min-width: 0;
   text-decoration: none;
   color: black;
   background: white;
@@ -99,12 +93,14 @@ image:
 }
 
 
-/* CATEGORY IMAGE */
+/* ================================
+   7 CATEGORY IMAGES
+================================ */
 
-.carousel-img {
+.category-card img {
   display: block;
-  width: 100% !important;
-  height: 750px;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
 }
 
@@ -115,75 +111,27 @@ image:
   width: 100%;
   background-color: skyblue;
   text-align: center;
-  padding: 14px 5px;
-  font-size: 20px;
+  padding: 12px 5px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 
 /* ================================
-   CAROUSEL
-================================ */
-
-.carousel {
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  width: 100%;
-}
-
-.carousel-item {
-  width: 100%;
-}
-
-.carousel-img {
-  display: block;
-  width: 100% !important;
-  height: 650px;
-  object-fit: cover;
-}
-
-
-..fashion-title {
-  position: absolute;
-  right: -300px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  display: flex;
-  flex-direction: column;
-
-  font-size: 70px;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: left;
-
-  color: white;
-  text-shadow: 3px 3px 8px black;
-  white-space: nowrap;
-}
-/* ================================
-   LAPTOP / TABLET
+   LAPTOP
 ================================ */
 
 @media (max-width: 1200px) {
 
   .category-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    padding: 25px;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
   }
 
   .category-card img {
-    height: 50px;
-  }
-
-  .carousel-img {
     height: 250px;
   }
-
 }
 
 
@@ -194,9 +142,9 @@ image:
 @media (max-width: 768px) {
 
   .category-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 15px;
   }
 
   .category-card img {
@@ -204,18 +152,9 @@ image:
   }
 
   .category-name {
-    font-size: 18px;
-    padding: 12px 5px;
+    font-size: 17px;
+    padding: 10px 5px;
   }
-
-  .carousel-img {
-    height: 450px;
-  }
-
-  .fashion-title {
-    font-size: 30px;
-  }
-
 }
 
 
@@ -226,14 +165,10 @@ image:
 @media (max-width: 576px) {
 
   .category-container {
-    width: 100%;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .category-card {
-    width: 100%;
+    width: 92%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0;
   }
 
   .category-card img {
@@ -243,20 +178,9 @@ image:
   }
 
   .category-name {
-    font-size: 16px;
-    padding: 10px 3px;
+    font-size: 15px;
+    padding: 9px 3px;
   }
-
-  .carousel-img {
-    width: 100% !important;
-    height: 350px;
-    object-fit: cover;
-  }
-
-  .fashion-title {
-    font-size: 24px;
-  }
-
 }
 
 
@@ -267,40 +191,32 @@ image:
 @media (max-width: 400px) {
 
   .category-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 10px;
+    width: 92%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .category-card img {
-    height: 280px;
+    height: 180px;
   }
 
   .category-name {
-    font-size: 18px;
-    padding: 12px;
+    font-size: 14px;
+    padding: 8px 2px;
   }
-
-  .carousel-img {
-    height: 280px;
-  }
-
-  .fashion-title {
-    font-size: 22px;
-  }
-
 }
 
 
 /* ================================
-   EXTRA SMALL MOBILE
+   VERY SMALL MOBILE
 ================================ */
 
 @media (max-width: 320px) {
 
   .category-container {
+    width: 94%;
     grid-template-columns: 1fr;
-    padding: 8px;
+    gap: 15px;
   }
 
   .category-card img {
@@ -310,12 +226,9 @@ image:
   .category-name {
     font-size: 16px;
   }
-
-  .carousel-img {
-    height: 240px;
-  }
-
 }
+
+
 
 `}</style>
 
