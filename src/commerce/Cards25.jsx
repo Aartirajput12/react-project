@@ -27,12 +27,54 @@ import React from "react";
   /* TABLET */ @media (max-width: 992px) { .gp1, .grp9 { justify-content: center; gap: 20px; padding: 0 15px; } 
   .gp1 .card, .grp9 .card { width: 45% !important; } .product-img { height: 350px !important; } } 
 
-  /* MOBILE */ @media (max-width: 576px) 
-  { .gp1, .grp9 { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 20px !important; padding: 0 15px; } 
-   .gp1 .card, .grp9 .card { width: 100% !important; max-width: 400px; } 
-   .product-img { height: 350px !important; }
-    .product-buttons { display: flex; flex-direction: column; gap: 10px; } 
-    .product-buttons .btn { width: 100px; margin-left: 0 !important; } .product-buttons a { width: 100%; } } 
+  /* MOBILE */
+@media (max-width: 576px) {
+
+  .gp1,
+  .grp9 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    padding: 0 15px;
+  }
+
+  .gp1 .card,
+  .grp9 .card {
+    width: 100% !important;
+    max-width: 400px;
+  }
+
+  .product-img {
+    height: 350px !important;
+  }
+
+  /* BUTTONS SAME ROW */
+  .product-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+
+  .product-buttons .btn {
+    width: auto !important;
+    margin-left: 0 !important;
+    flex: 1;
+  }
+
+  .product-buttons a {
+    width: auto !important;
+    flex: 1;
+  }
+
+  .product-buttons a .btn {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
     
     /* SMALL MOBILE */ @media (max-width: 375px) 
     { .gp1, .grp9 { padding: 0 10px; } .gp1 .card, .grp9 .card { width: 100% !important; }
