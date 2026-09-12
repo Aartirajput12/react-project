@@ -6,6 +6,7 @@ const Product2 = ({ cartItems, setCartItems }) => {
     const alreadyAdded = cartItems.find(
       (item) => item.id === product.id
     );
+    alert("product added to cart")
 
     if (alreadyAdded) {
       return;
