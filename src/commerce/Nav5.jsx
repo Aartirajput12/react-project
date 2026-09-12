@@ -92,7 +92,61 @@ const Nav5 = ({ count }) => {
     <>
 
 
-<style>{` /* ========================= NAVBAR ========================= */ .my-navbar { width: 100%; } .cart-box { position: relative; margin-right: 20px; } .cart-icon { height: 50px; width: 50px; cursor: pointer; display: block; } /* RED COUNT */ .cart-count { position: absolute; top: -10px; right: -7px; background: red; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; } /* ========================= MOBILE ========================= */ @media (max-width: 576px) { .my-navbar .container-fluid { padding-left: 10px; padding-right: 10px; } .navbar-brand { font-size: 20px; } .cart-box { margin-right: 5px; margin-top: 5px; } .cart-icon { width: 42px; height: 42px; } .cart-count { width: 22px; height: 22px; font-size: 12px; /* icon ke thoda upar */ top: -12px; right: -6px; } } /* ========================= SMALL MOBILE ========================= */ @media (max-width: 375px) { .navbar-brand { font-size: 18px; } .cart-icon { width: 38px; height: 38px; } .cart-count { width: 20px; height: 20px; font-size: 11px; top: -10px; right: -5px; } } `}</style>
+<style>{`     .cart-box {
+  position: relative;
+  margin-right: 20px;
+}
+
+.cart-icon {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+/* RED COUNT */
+.cart-count {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+
+  width: 32px;
+  height: 32px;
+
+  background: red;
+  color: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .cart-box {
+    margin-right: 10px;
+  }
+
+  .cart-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cart-count {
+    top: -12px;
+    right: -8px;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 16px;
+  }
+}      `}</style>
 
 
 
