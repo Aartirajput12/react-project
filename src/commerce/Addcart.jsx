@@ -62,23 +62,12 @@ const Addcart = ({ cartItems, setCartItems }) => {
           {cartItems.map((item) => (
             <div
               key={item.id}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "20px",
-                margin: "20px",
-                border: "1px solid gray",
-                padding: "10px",
-              }}
+              
             >
               <img
                 src={item.image}
                 alt="product"
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  objectFit: "cover",
-                }}
+                
               />
 
               <h4>₹ {item.price}</h4>
@@ -96,23 +85,18 @@ const Addcart = ({ cartItems, setCartItems }) => {
 
               <button
                 onClick={() => handleSub(item.id)}
-                style={{ width: "50px" }}
+                
               >
                 -
               </button>
 
-              <h5 style={{ marginLeft: "100px" }}>
+              <h5 >
                 Total: ₹ {item.price * item.quantity}
               </h5>
 
               <button
                 onClick={() => handleRemove(item.id)}
-                style={{
-                  border: "none",
-                  padding: "8px 15px",
-                  cursor: "pointer",
-                  marginLeft: "auto",
-                }}
+               
               >
                 Remove
               </button>
@@ -121,25 +105,14 @@ const Addcart = ({ cartItems, setCartItems }) => {
 
           {/* GRAND TOTAL */}
           <div
-            style={{
-              textAlign: "center",
-              marginTop: "30px",
-              padding: "20px",
-            }}
+          
           >
             <h3>
               Grand Total: ₹ {totalPrice}
             </h3>
 
             <NavLink to="/Form"><button
-              style={{
-                background: "green",
-                color: "white",
-                border: "none",
-                padding: "10px 30px",
-                fontSize: "18px",
-                cursor: "pointer",
-              }}
+             
             >
               Buy
             </button></NavLink>
