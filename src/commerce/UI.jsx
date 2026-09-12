@@ -100,7 +100,7 @@ image:
 .category-card img {
   display: block;
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -132,7 +132,7 @@ image:
   }
 
   .category-card img {
-    height: 190px;
+    height: 150px;
   }
 
   .category-name {
@@ -154,7 +154,7 @@ image:
   }
 
   .category-card img {
-    height: 200px;
+    height: 250px;
   }
 
   .category-name {
@@ -198,7 +198,7 @@ image:
   }
 
   .category-card img {
-    height: 190px;
+    height: 250px;
   }
 
   .category-name {
