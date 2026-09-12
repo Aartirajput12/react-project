@@ -198,7 +198,8 @@ image:
   }
 
   .category-card img {
-    height: 150px;
+    height: 180px;
+    width:"100%"
   }
 
   .category-name {
