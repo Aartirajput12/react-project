@@ -1,10 +1,13 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 const Product55 = ({ cartItems, setCartItems }) => {
   const navigate = useNavigate();
   const handleChange = (product) => {
+
+
     const login = localStorage.getItem("login");
   
     if (login !== "yes") {

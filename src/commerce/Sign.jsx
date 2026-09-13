@@ -53,7 +53,7 @@ const Sign = () => {
     // localStorage.setItem("isLoggedIn", "true");
 
     localStorage.setItem("userData", JSON.stringify(formData));
-    localStorage.setItem("login", "false");
+
     
     navigate("/Log");
 
