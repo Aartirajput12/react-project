@@ -4,37 +4,35 @@ import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 const Product1 = ({ cartItems, setCartItems }) => {
   const navigate = useNavigate();
-  
-  // const login = localStorage.getItem("login"); 
-  //  if (login !== "yes") { 
-  //    localStorage.setItem("pendingProduct", JSON.stringify(product));
-  //     navigate("/Sign"); return; 
-  //   }
 
-    const handleAdd = (product) => {
-      const login = localStorage.getItem("login");
-    
-      if (login !== "true") {
-        navigate("/Sign");
-        return;
-      }
-    
-      const alreadyAdded = cartItems.find(
-        (item) => item.id === product.id
-      );
-    alert("product added to cart")
-      if (alreadyAdded) {
-        return;
-      }
-    
-      setCartItems((prev) => [
-        ...prev,
-        {
-          ...product,
-          quantity: 1,
-        },
-      ]);
-    };
+  const handleAdd = (product) => {
+  
+    const login = localStorage.getItem("login");
+  
+    console.log("Login status:", login);
+  
+    if (login !== "true") {
+      navigate("/Sign");
+      return;
+    }
+  
+    const alreadyAdded = cartItems.find(
+      (item) => item.id === product.id
+    );
+  
+    if (alreadyAdded) {
+      return;
+    }
+  
+    setCartItems((prev) => [
+      ...prev,
+      {
+        ...product,
+        quantity: 1,
+      },
+    ]);
+  };
+
   return (
 <>
 
