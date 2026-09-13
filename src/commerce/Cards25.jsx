@@ -1,9 +1,16 @@
 import React from "react";
  import { NavLink } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
   const Cards25 = ({ cartItems, setCartItems }) => {
-    
+     const navigate = useNavigate();
      const handleAddToCart = (product) => { 
+
+      const login = localStorage.getItem("login");
+    
+      if (login !== "true") {
+        navigate("/Sign");
+        return;
+      }
 
       const alreadyAdded = cartItems.find(
          (item) => item.id === product.id ); 
