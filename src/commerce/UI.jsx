@@ -207,8 +207,8 @@ image:
     padding: 9px 2px;
   }
       .last-category-card {
-    width: 100% !important;
-    height:200px
+  text-align: center;
+
     grid-column: 1 / -1;
   }
 }
