@@ -207,7 +207,7 @@ image:
     padding: 9px 2px;
   }
       .last-category-card {
-
+margin-Left:"50px"
 width:150%
 
   }
