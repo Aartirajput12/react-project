@@ -212,7 +212,8 @@ image:
     font-size: 45px !important;
     font-weight: bold !important;
     line-height: 0.9 !important;
-    text-align: left !important;
+    text-align: right !important;
+        margin-Top: 30px !important;
   }
 
   .fashion-title span {
