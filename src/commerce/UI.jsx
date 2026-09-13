@@ -196,15 +196,26 @@ image:
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-.fashion-title{
- font-size: 20px;
+@media (max-width: 768px) {
+  .fashion-title {
+    left: 30px;
+    bottom: 40px;
+    font-size: 55px;
+  }
 }
 
+@media (max-width: 576px) {
+  .fashion-title {
+    left: 20px;
+    bottom: 30px;
+    font-size: 40px;
+  }
+}
 
 
   .category-card img {
     height: 180px;
-    width:"100%"
+    width:100%
   }
 
   .category-name {
