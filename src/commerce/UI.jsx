@@ -207,7 +207,7 @@ image:
     padding: 9px 2px;
   }
       .last-category-card {
-  text-align: center;
+  margin-Left: 50px ;
 
     grid-column: 1 / -1;
   }
