@@ -199,12 +199,12 @@ image:
 
 @media (max-width: 576px) {
   .carousel-caption {
-    left: 0 !important;
-    right: auto !important;
-    bottom: 20px !important;
+    left: auto !important;
+    right: 0 !important;
+    bottom: 60px !important;
     width: 100% !important;
-    text-align: left !important;
-    padding-left: 20px !important;
+    text-align: right !important;
+    padding-right: 20px !important;
   }
 
   .fashion-title {
@@ -213,12 +213,11 @@ image:
     font-weight: bold !important;
     line-height: 0.9 !important;
     text-align: right !important;
-        margin-Top: 30px !important;
   }
 
   .fashion-title span {
     display: block !important;
-    text-align: left !important;
+    text-align: right !important;
   }
 }
 
