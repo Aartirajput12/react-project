@@ -196,6 +196,11 @@ image:
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+.fashion-title{
+ font-size: 20px;
+}
+
+
 
   .category-card img {
     height: 180px;
