@@ -209,7 +209,7 @@ image:
       .last-category-card {
   margin-Left: 50px ;
 
-    grid-column: 1 / -1;
+
   }
 }
 }
