@@ -208,7 +208,7 @@ image:
   }
       .last-category-card {
   margin-Left: 80px ;
-width:100%
+width:200%
 
   }
 }
