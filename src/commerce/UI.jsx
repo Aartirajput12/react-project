@@ -208,6 +208,7 @@ image:
   }
       .last-category-card {
     width: 100% !important;
+    height:200px
     grid-column: 1 / -1;
   }
 }
