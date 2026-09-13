@@ -206,6 +206,11 @@ image:
     font-size: 14px;
     padding: 9px 2px;
   }
+      .last-category-card {
+    width: 100% !important;
+    grid-column: 1 / -1;
+  }
+}
 }
 
 
@@ -296,11 +301,13 @@ image:
 
 <div className="category-container">
   {Products.map((item) => (
-    <NavLink
-      to={item.link}
-      key={item.id}
-      className="category-card"
-    >
+   <NavLink
+   to={item.link}
+   key={item.id}
+   className={`category-card ${
+     item.id === 7 ? "last-category-card" : ""
+   }`}
+ >
       <img src={item.image} alt={item.name} />
 
       <div className="category-name">
