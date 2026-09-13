@@ -196,22 +196,30 @@ image:
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-@media (max-width: 768px) {
-  .fashion-title {
-    left: 30px;
-    bottom: 40px;
-    font-size: 55px;
-  }
-}
 
 @media (max-width: 576px) {
+  .carousel-caption {
+    left: 0 !important;
+    right: auto !important;
+    bottom: 20px !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding-left: 20px !important;
+  }
+
   .fashion-title {
-    left: 20px;
-    bottom: 30px;
-    font-size: 40px;
+    margin: 0 !important;
+    font-size: 45px !important;
+    font-weight: bold !important;
+    line-height: 0.9 !important;
+    text-align: left !important;
+  }
+
+  .fashion-title span {
+    display: block !important;
+    text-align: left !important;
   }
 }
-
 
   .category-card img {
     height: 180px;
